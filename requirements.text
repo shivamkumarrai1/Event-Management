@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+alembic
+pydantic
+python-dotenv
+passlib[bcrypt]
+python-jose[cryptography]
+psycopg2-binary  # or use 'asyncpg' if using async
