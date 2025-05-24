@@ -112,8 +112,8 @@ GET /api/events/{id}/diff/{versionId1}/{versionId2} - Get a difference between t
 Role	 Can View	 Can Edit	 Can Delete
 
 Owner	  ✅       	✅	       ✅
-Editor	✅	      ✅	       ❌
-Viewer	✅	      ❌        ❌
+Editor	✅	   ✅	       ❌
+Viewer	✅	   ❌        ❌
 
 ✅ Deployment (Render)
 Backend: FastAPI via Render Web Service
