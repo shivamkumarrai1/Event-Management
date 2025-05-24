@@ -109,7 +109,7 @@ GET /api/events/{id}/changelog                          -Get a log of all change
 GET /api/events/{id}/diff/{versionId1}/{versionId2}     -Get a difference between two versions
 
 🔐 Roles & Permissions
-Role	 Can View	 Can Edit	 Can Delete
+Role   CanView    CanEdit    CanDelete
 
 Owner   ✅         ✅          ✅
 Editor  ✅         ✅          ❌
