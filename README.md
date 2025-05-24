@@ -76,37 +76,41 @@ POST /api/auth/logout
 📘 API Endpoints Summary
 
 # 🔐 Authentication
+Method  Endpoint	Description
 
-Method	Endpoint	Description
-POST	/api/auth/register	 Register new user
-POST	/api/auth/login	Login (get tokens)
-POST	/api/auth/refresh	  Refresh token
-POST	/api/auth/logout	  Logout
+POST	/api/auth/register	 -Register new user
+POST	/api/auth/login	    -Login (get tokens)
+POST	/api/auth/refresh     -Refresh token
+POST	/api/auth/logout	    -Logout
 
 📆 Events Management
 Method	Endpoint	Description
-GET	 /api/events 	-Get user's events (list all events the user has access to with pagination and filteration)
-POST	/api/events 	-Create new event
-GET	 /api/events/{id}	 -Get specific event
-PUT	 /api/events/{id}	 -Update event (if editor)
+
+GET	 /api/events 	      -Get user's events (list all events the user has access to with pagination and filteration)
+POST	/api/events 	      -Create new event
+GET	 /api/events/{id}	   -Get specific event
+PUT	 /api/events/{id}	   -Update event (if editor)
 DELETE	/api/events/{id}	-Delete event (if owner)
-post  /api/events/batch   -Create multiple events in a single request
+post  /api/events/batch    -Create multiple events in a single request
 
 🔒 Permissions (collaborations)
 Method	Endpoint	Description
-POST  /api/events/{id}/share  -Share an event with other users
-GET	 /api/events/{id}/permissions 	-List shared users
-PUT	 /api/events/{id}/permissions/{user_id} 	-Update a user’s permission
+
+POST  /api/events/{id}/share                        -Share an event with other users
+GET	 /api/events/{id}/permissions 	             -List shared users
+PUT	 /api/events/{id}/permissions/{user_id}       -Update a user’s permission
 DELETE	 /api/events/{id}/permissions/{user_id}	 -Revoke access
 
 🕓 Version History
 Method	Endpoint	Description
-POST /api/events/{id}/rollback/{versionId} - Rollback to a previous version
-GET	/api/events/{id}/history	-Get event change history
+
+POST /api/events/{id}/rollback/{versionId}        -Rollback to a previous version
+GET	/api/events/{id}/history	                 -Get event change history
 
 # Changelog & Difference
-GET /api/events/{id}/changelog - Get a log of all changes to an event
-GET /api/events/{id}/diff/{versionId1}/{versionId2} - Get a difference between two versions
+
+GET /api/events/{id}/changelog                          -Get a log of all changes to an event
+GET /api/events/{id}/diff/{versionId1}/{versionId2}     -Get a difference between two versions
 
 🔐 Roles & Permissions
 Role	 Can View	 Can Edit	 Can Delete
