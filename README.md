@@ -6,7 +6,6 @@ A secure and extensible FastAPI backend for managing events, user authentication
 
 🌐 API Base URL: [https://event-management-gitk.onrender.com](https://event-management-gitk.onrender.com)  
 📘 API Docs (Swagger): [https://event-management-gitk.onrender.com/docs](https://event-management-gitk.onrender.com/docs)
-## while testing through the Swagger UI, fill in only the required fields marked with an asterisk (*).
 
 ##  Features
 
