@@ -6,8 +6,7 @@ A secure and extensible FastAPI backend for managing events, user authentication
 
 🌐 API Base URL: [https://event-management-gitk.onrender.com](https://event-management-gitk.onrender.com)  
 📘 API Docs (Swagger): [https://event-management-gitk.onrender.com/docs](https://event-management-gitk.onrender.com/docs)
-
----
+## while testing through the Swagger UI, fill in only the required fields marked with an asterisk (*).
 
 ##  Features
 
@@ -93,6 +92,7 @@ DELETE	/api/events/{id}	-Delete event (if owner)
 post  /api/events/batch    -Create multiple events in a single request
 
 🔒 Permissions (collaborations)
+##To change a users's role for an event, you must first share that event with the user. Attempting to update permissions before sharing will result in an error.
 
 POST  /api/events/{id}/share                        -Share an event with other users
 GET	 /api/events/{id}/permissions 	             -List shared users
@@ -125,6 +125,7 @@ Database: PostgreSQL (managed via Render)
 
 🧪 Testing
 Use Swagger UI: /docs
+## while testing through the Swagger UI, fill in only the required fields marked with an asterisk (*).
 
 Or use Postman with:
 
